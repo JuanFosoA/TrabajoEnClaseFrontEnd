@@ -1,27 +1,58 @@
 .main {
-    width: 98%;
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    min-height: 80dvh;
-  }
-  
-  .main .aside {
-    display: 	flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 25%;
-    background: #2e5adf;
-  }
-  
-  .main .principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 64%;
-    border-radius: 10px;
-    background: #2e5adf;
-  }
-  
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
