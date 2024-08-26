@@ -12,9 +12,9 @@ export default function Principal() {
             <section className='principal'>
                 <div className='slider-wrapper'>
                     <div className='slider'>
-                        <img id='slide-1' src={CSS} alt="Gojo" />
-                        <img id='slide-2' src={elhtml} alt="Sukuna" />
-                        <img id='slide-3' src={fine} alt="Gojo Vs Sukuna" />
+                        <img id='slide-1' src={CSS} alt="css" />
+                        <img id='slide-2' src={elhtml} alt="html" />
+                        <img id='slide-3' src={fine} alt="Perrito" />
                     </div>
                     <div className='slider-nav'>
                         <a href="#slide-1"></a>
