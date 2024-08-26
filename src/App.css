@@ -6,9 +6,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
+  margin: 0;
   background-color: #000;
-  background-image:url(assets/programar.jpeg);
+  background-image: url(assets/programar.jpeg);
   background-position: center;
   background-size: cover;
 }
